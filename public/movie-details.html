@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Disney+</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">My List</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    <div id="movie-detail-container">
+        <div id="movie-poster-section">
+            <img id="movie-poster" src="" alt="Movie Poster">
+        </div>
+        <div id="movie-info-section">
+            <h1 id="movie-title"></h1>
+            <p id="movie-overview"></p>
+            <p><strong>Release Date:</strong> <span id="movie-release-date"></span></p>
+            <p><strong>Rating:</strong> <span id="movie-rating"></span></p>
+            <div id="play-button-container">
+                <button id="play-button">Play Full Movie</button>
+            </div>
+            <div id="trailer-section">
+                <h2>Trailer</h2>
+                <iframe id="movie-trailer" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div id="movie-section" style="display: none;">
+                <h2>Full Movie</h2>
+                <iframe id="movie-frame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div id="photos-section">
+                <h2>Photos</h2>
+                <div id="movie-photos" class="photos-container"></div>
+            </div>
+            <div id="similar-movies-section">
+                <h2>Similar Movies</h2>
+                <div id="similar-movies" class="carousel-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="movie-details.js"></script>
+</body>
+</html>

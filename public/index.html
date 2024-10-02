@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Fantasy+</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">My List</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    <div id="hero">
+        <div class="hero-content">
+            <img src="116665.jpg" alt="Hero Image" class="hero-image">
+            <div class="hero-overlay">
+                <h1 class="hero-title">Welcome to Fantasy</h1>
+                <p class="hero-description">Watch the latest movies and TV shows</p>
+                <button class="watch-now-button">Watch Now</button>
+            </div>
+        </div>
+    </div>
+    <section id="popular-movies" class="carousel">
+        <h2>Popular Movies</h2>
+        <div class="carousel-container"></div>
+        <div id="popular-pagination" class="pagination"></div>
+    </section>
+    <section id="top-rated-movies" class="carousel">
+        <h2>Top Rated Movies</h2>
+        <div class="carousel-container"></div>
+        <div id="top-rated-pagination" class="pagination"></div>
+    </section>
+    <section id="now-playing-movies" class="carousel">
+        <h2>Now Playing</h2>
+        <div class="carousel-container"></div>
+        <div id="now-playing-pagination" class="pagination"></div>
+    </section>
+    <section id="upcoming-movies" class="carousel">
+        <h2>Upcoming Movies</h2>
+        <div class="carousel-container"></div>
+        <div id="upcoming-pagination" class="pagination"></div>
+    </section>
+    <section id="recommended-movies" class="carousel">
+        <h2>Recommended Movies</h2>
+        <div class="carousel-container"></div>
+        <div id="recommended-pagination" class="pagination"></div>
+    </section>
+    <section id="new-releases" class="carousel">
+        <h2>New Releases</h2>
+        <div class="carousel-container"></div>
+        <div id="new-releases-pagination" class="pagination"></div>
+    </section>
+    <section id="search-results" class="carousel" style="display: none;">
+        <h2>Search Results</h2>
+        <div class="movies-container"></div>
+        <div id="search-pagination" class="pagination"></div>
+    </section>
+    <section id="movie-details" style="display: none;">
+        <div class="movie-details-content">
+            <img id="movie-poster" src="" alt="Movie Poster">
+            <div class="movie-details-info">
+                <h2 id="movie-title"></h2>
+                <p id="movie-overview"></p>
+                <p id="movie-release-date"></p>
+                <p id="movie-rating"></p>
+                <button id="play-button">Play</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
